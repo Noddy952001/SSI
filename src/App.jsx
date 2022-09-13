@@ -12,14 +12,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Update/> */}
       <Navbar/>
       <Routes>
         <Route path="/" element={<Student />}/>
         <Route path="/addstudent" element={<Add_Student />}/>
         <Route path="/update" element={<Update_Student/>}/>
         <Route path="/update_student:id" element={<Update/>}/>
-
       </Routes>
      
     </div>

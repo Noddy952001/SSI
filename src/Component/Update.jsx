@@ -3,8 +3,6 @@ import axios from "axios"
 import { useState } from "react";
 import { useParams } from "react-router-dom"
 
-
-
 export const Update = () => {
 
     const  [firstname , setfirstname]  = useState()
@@ -19,18 +17,13 @@ export const Update = () => {
         Last_name : Lastname,
         Email : email,
         Address : address
-
     }
        
     const handelSubmit = () => {
-
         axios.patch(`https://studentddata.herokuapp.com/student/${id}`, data).then(function(res){
             console.log(res.data)
         })
-
     }
-
-
 
     return(
         <div>
@@ -46,7 +39,6 @@ export const Update = () => {
             /> 
             <br />
 
-
             <label>Last Name</label>
             <input 
                 type="text"
@@ -56,7 +48,6 @@ export const Update = () => {
                 }}
             /> 
             <br />
-
 
             <label>Email</label>
             <input 
@@ -68,8 +59,6 @@ export const Update = () => {
             /> 
             <br />
 
-
-
             <label>Address</label>
             <input 
                 type="text"
@@ -79,7 +68,6 @@ export const Update = () => {
                 }}
             /> 
             <br />
-
 
             <button
                 onClick={handelSubmit}

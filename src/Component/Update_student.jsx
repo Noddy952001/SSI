@@ -1,12 +1,8 @@
-
 import React from "react";
 import axios from "axios"
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-
-
 
 export const Update_Student = () => {
 
@@ -22,8 +18,6 @@ export const Update_Student = () => {
             console.log("avid" , res.data)
         })
     }
-
-
 
     return(
 
@@ -41,7 +35,6 @@ export const Update_Student = () => {
                                 <th  className="table">Email</th>
                                 <th  className="table">Address</th>
                                 <th  className="table">Edit</th>
-
                             </tr>
                         </thead>
                         <tbody>
@@ -62,7 +55,6 @@ export const Update_Student = () => {
                         </tbody>
                 </table>
             </div>
-
         </div>
     )
 }

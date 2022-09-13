@@ -1,11 +1,5 @@
 import React from "react";
-
-import { Add_Student } from "./Add_student";
-import { Update_Student } from "./Update_student";
-import { Student } from "./Student";
 import { Link } from "react-router-dom";
-
-
 
 export const Navbar = () => {
     return(

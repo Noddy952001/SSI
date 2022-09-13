@@ -17,18 +17,13 @@ export const Add_Student = () => {
         Last_name : Lastname,
         Email : email,
         Address : address
-
     }
        
     const handelSubmit = () => {
-
         axios.post("https://studentddata.herokuapp.com/student", data).then(function(res){
             console.log(res.data)
         })
-
     }
-
-
 
     return(
         <div>

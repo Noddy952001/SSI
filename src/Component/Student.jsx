@@ -25,10 +25,7 @@ export const Student = () => {
     return(
 
         <div>
-
             <h1>Get all students Details</h1>
-
-
 
             <div className="maindiv">
                 <table className="table">
@@ -58,7 +55,6 @@ export const Student = () => {
                         </tbody>
                 </table>
             </div>
-
         </div>
     )
 }
