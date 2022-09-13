@@ -40,9 +40,9 @@ export const Student = () => {
                         </thead>
                         <tbody>
                             {
-                                data?.map((el , i=0 ) => {
+                                data?.map((el , i ) => {
                                 return (
-                                    <tr>
+                                    <tr key={i}>
                                         <td className="table">{i+1}</td>
                                         <td className="table">{el.First_name}</td>
                                         <td className="table">{el.Last_name}</td>

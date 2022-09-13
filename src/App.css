@@ -40,3 +40,16 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.Navbar{
+  background-color: black;
+  color: wheat;
+  height: 50px;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
