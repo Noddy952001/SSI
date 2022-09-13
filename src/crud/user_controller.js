@@ -23,4 +23,14 @@ router.get("/student", async (req, res) => {
   }
 });
 
+router.post("/student", async (req, res) => {
+  try {
+    const student = await Student.create(req.body);
+    return res.status(201).send(student);
+
+  } catch (err) {
+    return res.status(500).send(err.message);
+  }
+});
+
 module.exports = router;
