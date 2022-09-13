@@ -33,4 +33,18 @@ router.post("/student", async (req, res) => {
   }
 });
 
+
+router.patch("/:id", async (req,res) => {
+  try{
+    const student = await Student.findByIdAndUpdate(req.params.id,req.body,{
+        new:true,
+    }).lean()
+    .exec();
+    res.send(student);
+  }
+  catch(err){
+    res.send(err.message);
+  }
+});
+
 module.exports = router;
