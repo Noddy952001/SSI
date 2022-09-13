@@ -26,6 +26,8 @@ export const Student = () => {
 
         <div>
 
+            <h1>Get all students Details</h1>
+
 
 
             <div className="maindiv">

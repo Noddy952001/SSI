@@ -13,7 +13,7 @@ export const Navbar = () => {
             <div style={{display : "flex" , justifyContent : "space-between"}}>
             <Link to="/">Student</Link>
             <Link to="/addstudent">Add Student</Link>
-            <Link to="/update_Student">Update Student</Link>
+            <Link to="/update">Update Student</Link>
             </div>
         </div>
     )
